@@ -1,62 +1,37 @@
-📈 Stock Price Prediction Using Sentiment Analysis & LSTM
-Predicting stock market trends is a complex challenge influenced by numerous factors, including investor sentiment. This project combines Natural Language Processing (NLP) and Long Short-Term Memory (LSTM) networks to forecast stock price movements based on the sentiment extracted from financial news headlines.
+📌 Key Highlights
 
-📌 Project Overview
-This deep learning pipeline:
+✅ Hybrid Modeling Approach (LSTM + XGBoost + Prophet)
+Used LSTM networks to capture long-term temporal dependencies in stock price sequences
+Applied XGBoost for structured feature-based regression
+Implemented Prophet to model trend and seasonality components
 
-Extracts sentiment from real-world financial headlines.
+✅ Comprehensive Time-Series Dataset (1990–2023)
+Collected historical stock price data using Yahoo Finance / Alpha Vantage APIs
+Worked with features such as Open, High, Low, Close, and Volume
 
-Correlates sentiment trends with historical stock price movements.
+✅ Feature Engineering & Data Preprocessing
+Generated time-based features and lag variables
+Calculated technical indicators (Moving Averages, RSI, MACD, volatility)
+Normalised and scaled data for deep learning models
+Created sequences and applied padding for LSTM input
 
-Predicts future stock direction using an RNN-LSTM model.
-
-🚀 Key Highlights
-✅ Sentiment-Driven LSTM Model
-
-Trained an RNN-LSTM model to detect temporal patterns in sentiment-rich news data.
-
-✅ Advanced NLP Techniques
-
-Preprocessing: Tokenization, stopword removal, stemming, lemmatization
-
-Feature extraction: TF-IDF, Word2Vec, GloVe
-
-Sentiment scoring: VADER, TextBlob, BERT-based models
-
-✅ Real-Time Financial Data Integration
-
-Collected stock prices using Yahoo Finance API / Alpha Vantage
-
-Scraped and cleaned news headlines from trusted financial sources (e.g., Reuters, Bloomberg)
-
-✅ Model Optimization
-
-Applied dropout regularization, sequence padding
-
-Tuned hyperparameters (batch size, learning rate, sequence length)
+✅ Model Training & Optimization
+Tuned hyperparameters using Grid Search and Cross-Validation
+Applied dropout regularisation to improve generalisation
+Used early stopping to prevent overfitting
 
 ✅ Performance Evaluation
+Evaluated models using RMSE and MAE
+Compared prediction performance across LSTM, XGBoost, and Prophet
+Analysed prediction vs actual trends
 
-Regression Metrics: RMSE, MAE
+✅ Data Visualization & Insights
+Visualised stock trends and model predictions
+Used Matplotlib, Seaborn, and Plotly for interactive charts
 
-Classification Metrics: Precision, Recall, F1-score
+✅ Deployment
+Built a web application using Flask / Streamlit
+Enabled real-time stock price prediction and visualisation
+🔗 Technologies Used
 
-✅ Visualization Tools
-
-Used Matplotlib, Seaborn, and Plotly to visualize sentiment shifts and stock movements
-
-✅ Interactive Deployment
-
-Built a user-friendly web app using Flask and Streamlit for live sentiment-based trend predictions
-
-🔧 Tech Stack
-Languages/Frameworks: Python, TensorFlow/Keras, Flask, Streamlit
-
-NLP Tools: NLTK, SpaCy, Gensim, Transformers (Hugging Face)
-
-Data Handling: Pandas, NumPy
-
-Visualization: Matplotlib, Seaborn, Plotly
-
-APIs: Yahoo Finance, Alpha Vantage
-
+Python, TensorFlow/Keras, LSTM, XGBoost, Prophet, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Yahoo Finance AP
